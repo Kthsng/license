@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+ 	
+body {
+    display: flex;
+    background-image: url('dashboards/graphics/landpagebg.png');
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 30px;
+  z-index: 1000;
+  transition: all 0.4s;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar h2 { margin: 0; }
+
+.navbar a {
+  color: white;
+  background-color: lightgreen;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 40px;
+  transition: color 0.4s;
+}
+
+.navbar.scrolled {
+  background-color: green;
+  padding: 10px 30px;
+  height: 60px;
+}
+
+.navbar.scrolled,
+.navbar.scrolled a { color: white; }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .content {
+    font-size: 1em;
+  }
+}
